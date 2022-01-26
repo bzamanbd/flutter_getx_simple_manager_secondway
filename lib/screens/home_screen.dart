@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   final String title;
   HomeScreen({Key? key, required this.title}) : super(key: key);
 
-  NumberController numberController = NumberController();
+  NumberController numberController = Get.put(NumberController());
 
   @override
   Widget build(BuildContext context) {
